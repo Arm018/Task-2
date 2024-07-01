@@ -24,8 +24,8 @@ $articles = isset($_SESSION['articles']) ? $_SESSION['articles'] : [];
     <tbody>
     <?php foreach ($articles as $article): ?>
         <tr>
-            <td><?php echo $article['title']; ?></td>
-            <td><?php echo $article['content']; ?></td>
+            <td><?= $article['title']; ?></td>
+            <td><?= $article['content']; ?></td>
         </tr>
     <?php endforeach; ?>
     </tbody>
