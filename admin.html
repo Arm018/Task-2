@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adminka</title>
+</head>
+<body>
+<div>
+    <form method="post" action="admin.php">
+        <label for="title">Title:</label>
+        <br><br>
+        <input type="text" name="title" id="title">
+        <br><br>
+        <label for="content">Content:</label>
+        <br>
+        <textarea name="content" style="max-width: 400px" id="content"></textarea>
+
+        <br><br>
+
+        <button type="submit" style="font-size: 20px">Create</button>
+        <a href="index.php">Go to the Articles Page</a>
+
+    </form>
+
+</div>
+</body>
+</html>
+<style>
+    div {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    /* Styling for labels */
+    label {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    /* Styling for text inputs and textarea */
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    /* Styling for the submit button */
+    button[type="submit"] {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect for the submit button */
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    a{
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+        font-size: 20px;
+    }
+</style>
