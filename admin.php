@@ -37,4 +37,4 @@
     } else {
         echo "The fields are required";
 }
-?>
+
